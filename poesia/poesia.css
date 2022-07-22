@@ -1,0 +1,125 @@
+body{
+    
+    margin: 0;
+    font-family: lato, helvetica;
+
+}
+
+@font-face{
+    
+    font-family: TheBlacklist;
+    src: url("/fonts/JBElegant.ttf");
+}
+
+
+h1{
+
+	text-align: center;
+    font-family: JBElegant;
+    font-size: 3.5em;
+    color: #212529;
+    margin-bottom: 0;
+    margin-top: 1%;
+    padding-bottom: 0;
+    border: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+.poetry{
+    
+    text-align: end;
+    margin-top: 0;
+    
+}
+
+ul li{
+    
+    border-bottom: 1px solid #dee2e6;
+    
+}
+
+
+.superior{
+    
+    background-color: #212529;
+    height: 3px;
+    width: auto;
+    margin-bottom: 50px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.menu{
+    
+    height: 50%;
+    width 50px;
+    position: fixed;
+    
+    
+}
+
+pre{
+    font-family: lato, helvetica;
+}
+
+
+.poema{
+    
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    margin-left: 40%;  
+    
+}
+
+
+footer{
+    
+    width: 100%;
+    background-color: antiquewhite;
+    margin-top: 0px;
+    margin-bottom: 0;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+
+}
+
+.linkedin{
+    
+    width: 2%;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.facebook{
+    width: 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+
+
+
+.facebook:hover,.linkedin:hover{
+    
+    width: 4%;
+}
+
+.design{
+    
+    font-family: lato, helvetica;
+}
+
+.behance:hover{
+    
+    width: 5%;
+}

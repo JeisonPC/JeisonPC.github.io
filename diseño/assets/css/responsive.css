@@ -1,0 +1,165 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.text_content .test_name:before {
+		position: relative;
+		content: "";
+		width: 25px;
+		height: 1px;
+		top: 10px;
+		left: 200px;
+		display: block;
+		background: #fff;
+	}
+	.price-block .inner-box .title-box {
+		margin: 0;
+		box-shadow: none;
+	}
+	#pricing .pricing-column .inner-column {
+		position: relative;
+		margin-right: 0;
+	}
+}
+
+/* tablets */
+@media (max-width: 992px) {
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+	#hero-area .contents .head-title {
+		font-size: 42px;
+	}
+	#hero-area .contents .script-font {
+		font-size: 22px;
+	}
+	#hero-area .read_more_btn {
+		position: relative;
+		margin-left: 97px;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	#hero-area .read_more_btn:before {
+		position: absolute;
+		content: "";
+		width: 80%;
+		height: 1px;
+		right: 120px;
+		margin-top: 13px;
+	}
+	.about-images-border-outside {
+		background: transparent;
+		width: 330px;
+		height: 330px;
+		margin: 0 auto;
+		padding: 15px;
+		border: 1px solid rgb(0,0,0);
+		border-radius: 50%;
+	}
+	.about-images-circle-2 {
+		background: #dc3545;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		margin-top: 203px;
+		margin-left: 265px;
+		border-radius: 50%;
+}
+	.about-images-circle-3 {
+		background: #4B83FC;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		margin-top: 275px;
+		margin-left: 0;
+		border-radius: 50%;
+	}
+	.education-experience-content.mrt_30{
+		margin-top: 30px;
+	}
+	#pricing .title-column .inner-column {
+		position: relative;
+		padding-top: 0;
+		padding-right: 30px;
+	}
+	#pricing .pricing-column .inner-column {
+		position: relative;
+		margin-right: 0;
+	}
+	.text_content .test_name:before {
+		position: relative;
+		content: "";
+		width: 25px;
+		height: 1px;
+		top: 10px;
+		left: 120px;
+		display: block;
+		background: #fff;
+	}
+	.single_blog.mrt_30{
+		margin-top: 30px;
+	}
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+	.navbar-brand.js-scroll {
+		margin-left: 15px;
+	}
+	.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
+		padding: 10px 20px;
+	}
+	.navbar-b.navbar-reduce {
+		padding: 5px 0;
+	}
+	#hero-area{
+		height: inherit;
+	}
+	 #hero-area .contents {
+		padding: 150px 0 100px 0;
+	}
+	.hero_image {
+		display: none;
+	}
+	#hero-area .contents .head-title {
+		font-size: 50px;
+	}
+	#hero-area .contents .script-font{
+		font-size: 22px;
+	}
+	.pattern-layer-one {
+		position: absolute;
+		width: 50%;
+		height: 160px;
+		bottom: 0;
+		z-index: -1;
+		background-repeat: no-repeat;
+	}
+	#pricing .pricing-column .inner-column .price-block:nth-child(2) {
+		margin-top: 0;
+	}
+	.inner-column {
+		margin-right: 0 !important;
+	}
+	#pricing .title-column .inner-column{
+		padding-top: 0;
+	}
+	.education-experience-content.mrt_30{
+		margin-top: 30px;
+	}
+	
+	.single_blog.mrt_30{
+		margin-top: 0;
+	}
+	.text_content .test_name:before {
+		position: relative;
+		content: "";
+		width: 25px;
+		height: 1px;
+		top: 10px;
+		left: 150px;
+		display: block;
+		background: #fff;
+	}
+}
+

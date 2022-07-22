@@ -1,0 +1,318 @@
+/* Guía de estilo:
+0. Reset
+1. Layout
+2. Media query
+
+*/
+
+
+/* ------ 0. Reset ------ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ 1. Layout ------*/
+
+body{
+
+	font-family: lato, helvetica;
+    margin: 2.5%;
+    background: #212121;
+    font-size: 1em;
+
+    
+}
+
+/*@font-face permite al autor especificar fuentes online para visualizar en sus páginas web. 
+Al permitir a los autores proporcionar sus propias fuentes, @font-face elimina la necesidad de 
+depender del numero limitado de fuentes de usuarios instaladas en sus computadoras.*/
+@font-face
+{
+   font-family: "TheBlacklist";
+   src: url("/fonts/TheBlacklist.ttf");
+   src: url("/fonts/TheBlacklist.woff") format("woff"),
+   url('../fonts/TheBlacklist.woff2') format('woff2');
+}
+
+
+a{text-decoration:none;color:#FFF}
+
+h1{
+
+	color: white;
+}
+
+.titulo{
+
+	width: 50%;
+    -webkit-box-shadow: 
+    1px 1px 16px 0.5px #212529;
+    box-shadow: 1px 1px 16px 0.5px #212529;
+	background-color: #c92a2a;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.diseno{
+	float: left;
+	background-color: orange;
+	width: 50%;
+	height: 630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+.diseno-enlace{
+
+	font-size: 5rem;
+    border-radius: 3px;
+
+}
+
+.a{color:#E7484F}
+.b{color:#ff5722}
+.c{color:#FCED00}
+.d{color:#009E4F}
+.e{color:#00AAC3}
+.f{color:#732982}
+.container{margin-top:150px}
+.text-center{text-align:center}
+.rainbow{background-color:#343A40;border-radius:4px;color:#fff;cursor:pointer;padding:8px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.rainbow-5:hover{background-image:-webkit-gradient(linear,left top, right top,from(#E7484F),color-stop(16.65%, #E7484F),color-stop(16.65%, #ff5722),color-stop(33.3%, #f4511e),color-stop(33.3%, #FCED00),color-stop(49.95%, #FCED00),color-stop(49.95%, #009E4F),color-stop(66.6%, #009E4F),color-stop(66.6%, #00AAC3),color-stop(83.25%, #00AAC3),color-stop(83.25%, #732982),color-stop(100%, #732982),to(#E7484F));background-image:linear-gradient(to right,#E7484F,#E7484F 16.65%,#f4511e 16.65%,#f4511e 33.3%,#FCED00 33.3%,#FCED00 49.95%,#009E4F 49.95%,#009E4F 66.6%,#00AAC3 66.6%,#00AAC3 83.25%,#732982 83.25%,#732982 100%,#E7484F 100%);-webkit-animation:slidebg 2s linear infinite;animation:slidebg 2s linear infinite}
+@-webkit-keyframes slidebg{to{background-position:20vw}}
+@keyframes slidebg{to{background-position:20vw}}
+.follow{margin-top:40px}
+.follow a{color:#000;padding:8px 16px;text-decoration:none}
+
+
+.poesia{
+
+	float: right;
+    background-color: #1c7ed6;
+    width: 50%;
+    height: 630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+    
+}
+
+
+.poesia-enlace{
+
+	text-decoration: none;
+	font-size: 5rem;
+}
+
+.button{position:relative;border:none;background-color:transparent;cursor:pointer;outline:0;font-size:5rem;margin:1em .6em}
+.button.type1{color: white
+
+}
+.button.type1.type1::after,.button.type1.type1::before{content:"";display:block;position:absolute;width:20%;height:20%;border:2px solid;-webkit-transition:all .6s ease;transition:all .6s ease;border-radius:2px}
+.button.type1.type1::after{bottom:0;right:0;border-color:transparent #566473 #566473 transparent}
+.button.type1.type1::before{top:0;left:0;border-color:#566473 transparent transparent #566473}
+.button.type1.type1:hover:after,.button.type1.type1:hover:before{width:100%;height:100%}
+
+.button.type1:hover{
+    
+    color: orange;
+}
+a:hover{
+
+	color: darkorange;
+}
+
+footer{
+    
+    width: 100%;
+    text-align: center;
+}
+
+.facebook,.linkedin{
+    
+    width: 3%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 16px 0;
+
+}
+
+.behance{
+    
+    width: 4%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 5px 70px;
+    
+}
+
+.facebook:hover,.linkedin:hover{
+    
+    width: 4%;
+}
+
+.behance:hover{
+    
+    width: 5%;
+}
+
+.firma{
+    
+    color: #212529;
+    font-family: TheBlacklist;
+    font-size: 2.5em;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    margin-top: 550px;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.design{
+    
+    color: white;
+}
+
+
+/* ------ 2. Media Query ------ */
+/* Móviles en vertical
+   ------------------------------------------------------------------------- */
+    
+@media only screen and ( max-width: 1024px ) {
+	
+  /* Aquí van los estilos para iPad horizontal */
+	
+}
+
+
+@media only screen and ( max-width: 768px ) {
+	
+  /* Aquí van los estilos para iPad vertical */
+    
+    .titulo{
+        
+        margin-top: 270px;
+
+    }
+    
+    .diseno{
+
+        width: 100%;
+        height: 300px;
+
+
+    }
+
+    .poesia{
+        width: 100%;
+        height: 300px;
+    }
+    
+    
+	
+}
+
+
+@media only screen and ( max-width: 480px ) {
+	
+  /* Aquí van los estilos para iPhone horizontal */
+	
+}
+
+
+@media only screen and ( max-width: 320px ) {
+	
+  /* Aquí van los estilos para iPhone vertical */
+	
+}
